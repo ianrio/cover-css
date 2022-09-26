@@ -1,0 +1,23 @@
+:root {
+  --size: 300px;
+}
+
+.container {
+  width: 100%;
+  height: 600px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  margin: 40px;
+}
+
+.cuadrado {
+  width: var(--size);
+  height: var(--size);
+  background-color: rebeccapurple;
+}
+
+.disk {
+  background-color: blue;
+}
