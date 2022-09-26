@@ -5,7 +5,7 @@
 .main-container {
   width: calc(var(--size) *2);
   height: var(--size);
-  background-color: rgb(255 255 255);
+  background-color: #fff;
   display: flex;
   justify-content: start;
   align-items: flex-start;
@@ -15,7 +15,7 @@
 .square {
   width: var(--size);
   height: var(--size);
-  background-color: rgb(85 80 80);
+  background-color: #555050;
   border: 1px solid black;
   z-index: 2;
   background-image: url(img/photo.jpg);
@@ -26,14 +26,20 @@
   width: var(--size);
   height: var(--size);
   border-radius: 50%;
-  background-color: rgb(0 0 0);
+  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateX(-20px);
+  transform: translateX(-150px);
+  transition: transform-1 ease-in-out;
+  background-image: 6 ease-in-out;
   background-image:
-    linear-gradient(130deg, transparent 40%, #fff5, transparent:60%),
-    repeating-radial-gradient(circle at center, #333 0 1px, black 1px 20px);
+    linear-gradient(130deg, transparent 40%, #fff5, transparent 60%),
+    repeating-radial-gradient(circle at center, #525252 0 1px, black 1px 20px);
+}
+
+.disk:hover {
+  transform: translateX(-50px) rotate(80deg);
 }
 
 .diskround {
